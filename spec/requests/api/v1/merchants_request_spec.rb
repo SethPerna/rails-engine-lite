@@ -34,4 +34,13 @@ RSpec.describe 'merchants API' do
     expect(merchant[:data][:attributes]).to have_key(:name)
     expect(merchant[:data][:attributes][:name]).to be_a(String)
   end
+
+  xit 'get all items for specific merchant' do
+    id = create(:merchant).id
+
+    get "/api/v1/merchants/#{id}/items"
+
+    merchant = JSON.parse(response.body, symbolize_names: true)
+
+  end
 end
