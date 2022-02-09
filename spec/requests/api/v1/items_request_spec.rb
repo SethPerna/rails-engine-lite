@@ -87,7 +87,7 @@ RSpec.describe 'Items API' do
     expect(item.name).to eq("IPA")
   end
 
-  it 'delete and item' do
+  it 'delete an item' do
     merchant = create(:merchant)
     id = create(:item, merchant_id: merchant.id).id
 
@@ -98,5 +98,18 @@ RSpec.describe 'Items API' do
     expect(response.status).to eq(204)
     expect(Item.count).to eq(0)
     expect{Item.find(id)}.to raise_error(ActiveRecord::RecordNotFound)
+  end
+
+  it 'get a merchant data from an item id' do
+    merchant_1 = create(:merchant)
+    merchant_2 = create(:merchant)
+    item = create(:item, merchant_id: merchant_1.id)
+
+    get "/api/v1/items/#{item.id}/merchant"
+
+    merchant = JSON.parse(response.body, symbolize_names: true)
+    expect(merchant[:data][:id].to_i).to eq(merchant_1.id)
+    expect(merchant[:data][:attributes][:name]).to eq(merchant_1.name)
+    expect(item.merchant_id).to eq(merchant[:data][:id].to_i)
   end
 end
