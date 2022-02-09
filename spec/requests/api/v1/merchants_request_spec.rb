@@ -65,4 +65,18 @@ RSpec.describe 'merchants API' do
     expect(response.status).to eq(200)
     expect(response_data).to eq(merchant_1.name)
   end
+
+  it 'returns message when no merchant is found' do
+    merchant_1 = Merchant.create!(name: "Williams and Son")
+    merchant_2 = Merchant.create!(name: "Ted Turner")
+
+    get "/api/v1/merchants/find?name=Seth"
+
+    merchant = JSON.parse(response.body, symbolize_names: true)
+    response_data = merchant[:data][:messgae]
+
+    expect(response).to be_successful
+    expect(response.status).to eq(200)
+    expect(response_data).to_not eq("Merchant not found")
+  end
 end
