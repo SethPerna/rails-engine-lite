@@ -11,12 +11,14 @@ class Api::V1::ItemsController < ApplicationController
     item = Item.new(item_params)
     if item.save
       render json: ItemSerializer.new(Item.create(item_params)), status: :created
+    else
+      render status: 404
     end
   end
 
   def update
     item = Item.find(params[:id])
-    if item.update(item_params)
+    if item.update(item_params) && Merchant.find(params[:item][:merchant_id])
       render json: ItemSerializer.new(item)
     else
       render status: 404
@@ -26,7 +28,7 @@ class Api::V1::ItemsController < ApplicationController
   def destroy
     item = Item.find(params[:id])
     if item.destroy
-      render json: Item.delete(params[:id]), status: :no_content
+      render status: :no_content
     end
   end
 
