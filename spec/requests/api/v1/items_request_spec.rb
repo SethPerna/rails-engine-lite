@@ -57,7 +57,6 @@ RSpec.describe 'Items API' do
     })
 
     headers = {"CONTENT_TYPE" => "application/json"}
-
     post '/api/v1/items', headers: headers, params: JSON.generate(item: item_params)
 
     created_item = Item.last
@@ -76,7 +75,7 @@ RSpec.describe 'Items API' do
     id = create(:item, merchant_id: merchant.id).id
 
     previous_name = Item.last.name
-    item_params = { name: 'IPA'}
+    item_params = { name: 'IPA', merchant_id: "#{merchant.id}" }
     headers = {"CONTENT_TYPE" => "application/json"}
 
     patch "/api/v1/items/#{id}", headers: headers, params: JSON.generate(item: item_params)

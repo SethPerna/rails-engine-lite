@@ -51,4 +51,18 @@ RSpec.describe 'merchants API' do
     expect(item[:merchant_id]).to eq(merchant_1.id)
 
   end
+
+  it 'find one merchant based on search criteria' do
+    merchant_1 = Merchant.create!(name: "Williams and Son")
+    merchant_2 = Merchant.create!(name: "Ted Turner")
+
+    get "/api/v1/merchants/find?name=Williams"
+
+    merchant = JSON.parse(response.body, symbolize_names: true)
+    response_data = merchant[:data][:attributes][:name]
+
+    expect(response).to be_successful
+    expect(response.status).to eq(200)
+    expect(response_data).to eq(merchant_1.name)
+  end
 end
