@@ -161,11 +161,11 @@ Before using the web application you will need to setup your databases locally b
 $ rails db: {:drop, :create, :migrate, :seed}
 ```
 
-5. CSV Load
+5. Pg Dump Load
 Next we will seed environment with generic data by using CSV files by running the following command
 
 ```shell
-$ rake csv_load:all
+$ rails db:schema:dump
 ```
 
 6. Startup and Access<br>
