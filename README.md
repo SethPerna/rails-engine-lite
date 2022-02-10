@@ -182,13 +182,6 @@ At this point you should be taken to the welcome page of the web-app. If you enc
 
 
 
-## Phases
-
-1. [Database Setup](./doc/db_setup.md)
-1. [User Stories](./doc/user_stories.md)
-1. [Extensions](./doc/extensions.md)
-1. [Evaluation](./doc/evaluation.md)
-
 ## **Contributors** ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -196,11 +189,8 @@ At this point you should be taken to the welcome page of the web-app. If you enc
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/sethperna"><img src="https://avatars.githubusercontent.com/u/88012780?v=4" width="100px;" alt=""/><br /><sub><b>Seth (he/him)</b></sub></a><br /><a href="https://github.com/tjroeder/little-esty-shop/commits?author=arnaldoaparicio" title="Code">💻</a> <a href="#ideas-arnaldoaparicio" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/tjroeder/little-esty-shop/commits?author=arnaldoaparicio" title="Tests">⚠️</a> <a href="https://github.com/tjroeder/little-esty-shop/pulls?q=is%3Apr+reviewed-by%3Ajarnaldoaparicio" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://github.com/echon006"><img src="https://avatars.githubusercontent.com/u/89038271?v=4" width="100px;" alt=""/><br /><sub><b>Eric (he/him)</b></sub></a><br /><a href="https://github.com/tjroeder/little-esty-shop/commits?author=echon006" title="Code">💻</a> <a href="#ideas-echon006" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/tjroeder/little-esty-shop/commits?author=echon006" title="Tests">⚠️</a> <a href="https://github.com/tjroeder/little-esty-shop/pulls?q=is%3Apr+reviewed-by%3Ajechon006" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://github.com/tjroeder"><img src="https://avatars.githubusercontent.com/u/78194232?v=4" width="100px;" alt=""/><br /><sub><b>Tim (he/him)</b></sub></a><br /><a href="https://github.com/tjroeder/little-esty-shop/commits?author=tjroeder" title="Code">💻</a> <a href="#ideas-tjroeder" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/tjroeder/little-esty-shop/commits?author=tjroeder" title="Tests">⚠️</a> <a href="https://github.com/tjroeder/little-esty-shop/pulls?q=is%3Apr+reviewed-by%3Atjroeder" title="Reviewed Pull Requests">👀</a></td>
-    <td align="center"><a href="https://github.com/wadenaughton"><img src="https://avatars.githubusercontent.com/u/90228086?v=4" width="100px;" alt=""/><br /><sub><b>Wade (he/him)</b></sub></a><br /><a href="https://github.com/tjroeder/little-esty-shop/commits?author=wadenaughton" title="Code">💻</a> <a href="#ideas-wadenaughton" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/tjroeder/little-esty-shop/commits?author=wadenaughton" title="Tests">⚠️</a> <a href="https://github.com/tjroeder/little-esty-shop/pulls?q=is%3Apr+reviewed-by%3Ajwadenaughton" title="Reviewed Pull Requests">👀</a></td>
-  </tr>
+    <td align="center"><a href="https://github.com/sethperna"><img src="https://avatars.githubusercontent.com/u/88012780?v=4" width="100px;" alt=""/><br /><sub><b>Seth (he/him)</b></sub></a><br /><a href="https://github.com/sethperna/rails-engine-lite/commits?author=sethperna" title="Code">💻</a> <a href="#ideas-sethperna" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/sethperna/rails-engine-lite/commits?author=sethperna" title="Tests">⚠️</a> <a href="https://github.com/tjroeder/little-esty-shop/pulls?q=is%3Apr+reviewed-by%3sethperna" title="Reviewed Pull Requests">👀</a></td>
+
 </table>
 
 <!-- markdownlint-restore -->
