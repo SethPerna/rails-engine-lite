@@ -189,7 +189,7 @@ At this point you should be taken to the welcome page of the web-app. If you enc
 <!-- markdownlint-disable -->
 <table>
   <tr>
-    <td align="center"><a href="https://github.com/sethperna"><img src="https://avatars.githubusercontent.com/u/88012780?v=4" width="100px;" alt=""/><br /><sub><b>Seth (he/him)</b></sub></a><br /><a href="https://github.com/sethperna/rails-engine-lite/commits?author=sethperna" title="Code">💻</a> <a href="#ideas-sethperna" title="Ideas, Planning, & Feedback">🤔</a> <a href="https://github.com/sethperna/rails-engine-lite/commits?author=sethperna" title="Tests">⚠️</a> <a href="https://github.com/tjroeder/little-esty-shop/pulls?q=is%3Apr+reviewed-by%3sethperna" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="https://github.com/sethperna"><img src="https://avatars.githubusercontent.com/u/88012780?v=4" width="100px;" alt=""/><br /><sub><b>Seth (he/him)</b></sub></a><br /><a href="https://github.com/sethperna/rails-engine-lite/commits?author=sethperna" title="Code">💻</a> <a href="#ideas-sethperna" title="Ideas, Planning, & Feedback">�</a> <a href="https://github.com/sethperna/rails-engine-lite/commits?author=sethperna" title="Tests">⚠️</a> <a href="https://github.com/tjroeder/little-esty-shop/pulls?q=is%3Apr+reviewed-by%3sethperna" title="Reviewed Pull Requests">👀</a></td>
 
 </table>
 
