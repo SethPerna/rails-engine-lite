@@ -70,6 +70,35 @@ RSpec.describe 'Items API' do
     expect(created_item.merchant_id).to eq(item_params[:merchant_id])
   end
 
+  it 'returns status 404 if invalide attributes are provided' do
+    merchant = create(:merchant)
+    item_params = ({
+      name: 'Stout',
+      description: 'dark notes with rich oatmeal flavor',
+      unit_price: 7.5,
+      merchant_id: 999999999
+    })
+
+    headers = {"CONTENT_TYPE" => "application/json"}
+    post '/api/v1/items', headers: headers, params: JSON.generate(item: item_params)
+
+    expect(response.status).to eq(404)
+  end
+
+  it 'returns status 404 if invalide attributes are provided' do
+    merchant = create(:merchant)
+    item_params = ({
+      description: 'dark notes with rich oatmeal flavor',
+      unit_price: 7.5,
+      merchant_id: merchant.id
+    })
+
+    headers = {"CONTENT_TYPE" => "application/json"}
+    post '/api/v1/items', headers: headers, params: JSON.generate(item: item_params)
+
+    expect(response.status).to eq(404)
+  end
+
   it 'edit an item' do
     merchant = create(:merchant)
     id = create(:item, merchant_id: merchant.id).id
