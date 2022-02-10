@@ -20,12 +20,12 @@
 
 ## Schema
 - See image below for project database schema:
-![image](https://user-images.githubusercontent.com/78194232/149197741-b873de21-7732-4b1f-9706-6a0b0014c978.png)
+![image](<iframe width="560" height="315" src='https://dbdiagram.io/embed/61f82be785022f4ee51a9ff5'> </iframe>)
 
 ## Requirements and Setup (for Mac):
 
 ### Ruby and Rails
-- Ruby Version 2.7.2
+- Ruby Version 2.7.4
 - Rails Version 5.2.6
 
 ### Gems Utilized
