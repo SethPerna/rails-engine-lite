@@ -4,7 +4,7 @@
 ![PRs](https://img.shields.io/github/issues-pr-closed/sethperna/rails-engine-lite)
 ![rspec](https://img.shields.io/gem/v/rspec?color=blue&label=rspec)
 ![simplecov](https://img.shields.io/gem/v/simplecov?color=blue&label=simplecov) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/contributors-4-orange.svg?style=flat)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/contributors-1-orange.svg?style=flat)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ## Background and Description
@@ -20,7 +20,7 @@
 
 ## Schema
 - See image below for project database schema:
-![image](<iframe width="560" height="315" src='https://dbdiagram.io/embed/61f82be785022f4ee51a9ff5'> </iframe>)
+<img width="1010" alt="Screen Shot 2022-02-10 at 11 56 33 AM" src="https://user-images.githubusercontent.com/90224504/153457206-8c74f40f-20a8-4d89-8c97-0f7446a0393a.png">
 
 ## Requirements and Setup (for Mac):
 
