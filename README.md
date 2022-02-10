@@ -1,7 +1,7 @@
 # Rails Engine Lite: Turing 2110 BE Mod 3
 
-![languages](https://img.shields.io/github/languages/top/sethperna/rails-eninge-lite?color=red)
-![PRs](https://img.shields.io/github/issues-pr-closed/tjroeder/little-esty-shop)
+![languages](https://img.shields.io/github/languages/top/sethperna/rails-engine-lite?color=red)
+![PRs](https://img.shields.io/github/issues-pr-closed/sethperna/rails-engine-lite)
 ![rspec](https://img.shields.io/gem/v/rspec?color=blue&label=rspec)
 ![simplecov](https://img.shields.io/gem/v/simplecov?color=blue&label=simplecov) <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/contributors-4-orange.svg?style=flat)](#contributors-)
