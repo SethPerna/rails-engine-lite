@@ -9,7 +9,7 @@ class Api::V1::SearchesController < ApplicationController
   end
 
   def find_all
-    if params[:name]
+    if params[:name] #&& !params[:min_price].present? || !params[:max_price]
       items = Item.where("name ILIKE ?", "%#{params[:name]}%")
     elsif params[:min_price]
       items = Item.where("unit_price > ?", params[:min_price])
