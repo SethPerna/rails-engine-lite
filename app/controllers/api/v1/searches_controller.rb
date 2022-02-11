@@ -9,7 +9,14 @@ class Api::V1::SearchesController < ApplicationController
   end
 
   def find_all
-    items = Item.where("name ILIKE ?", "%#{params[:name]}%")
+    if params[:name] #&& !params[:min_price].present? || !params[:max_price]
+      items = Item.where("name ILIKE ?", "%#{params[:name]}%")
+    elsif params[:min_price]
+      items = Item.where("unit_price > ?", params[:min_price])
+    elsif params[:max_price]
+      items = Item.where("unit_price < ?", params[:max_price])
+    end
+
     if items.nil?
       render json: { data: { message: 'Item not found' } }
     else

@@ -35,6 +35,13 @@ RSpec.describe 'merchants API' do
     expect(merchant[:data][:attributes][:name]).to be_a(String)
   end
 
+  it 'returns 404 if invalid id' do
+
+    get "/api/v1/merchants/999999999"
+
+    expect(response.status).to eq(404)
+  end
+
   it 'get all items for specific merchant' do
     merchant_1 = create(:merchant)
     merchant_2 = create(:merchant)
