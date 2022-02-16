@@ -17,7 +17,7 @@ class Api::V1::SearchesController < ApplicationController
       items = Item.where("unit_price < ?", params[:max_price])
     end
 
-    if items.nil?
+    if items.nil? #{ data: { [] } }
       render json: { data: { message: 'Item not found' } }
     else
       render json: ItemSerializer.new(items)
